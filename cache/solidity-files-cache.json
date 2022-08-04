@@ -1,0 +1,454 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/muhammedrasheed/mycontract/contracts/box.sol": {
+      "lastModificationDate": 1658816492997,
+      "contentHash": "811394e3e7340d21b4b7e27e9c935610",
+      "sourceName": "contracts/box.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Box"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/contracts/boxV2.sol": {
+      "lastModificationDate": 1658308729649,
+      "contentHash": "d98a9f253d29a6d4e5dfcf046c8198c0",
+      "sourceName": "contracts/boxV2.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "BoxV2"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/contracts/StoreFactory.sol": {
+      "lastModificationDate": 1658817147474,
+      "contentHash": "2e5cebcb9db6ab12ebcaafc26d5d5c89",
+      "sourceName": "contracts/StoreFactory.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./box.sol",
+        "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "StoreFactory"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/node_modules/@openzeppelin/upgrades/contracts/upgradeability/InitializableAdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1658472837987,
+      "contentHash": "e3522d3fd0b828ee04177919a094d9c8",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/InitializableAdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseAdminUpgradeabilityProxy.sol",
+        "./InitializableUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "InitializableAdminUpgradeabilityProxy"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/node_modules/@openzeppelin/upgrades/contracts/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1658472837984,
+      "contentHash": "00ad26c53d31fde4d2758f0e3bcf7694",
+      "sourceName": "@openzeppelin/upgrades/contracts/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.2"
+      ],
+      "artifacts": [
+        "OpenZeppelinUpgradesECDSA"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/node_modules/@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1658472837978,
+      "contentHash": "a700de1d5fa4e30a65048a42c1019e4f",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./UpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "BaseAdminUpgradeabilityProxy"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/node_modules/@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1658472837989,
+      "contentHash": "50ee48ee01e9018b4bd91b4d0b245fbe",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "InitializableUpgradeabilityProxy"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/node_modules/@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol": {
+      "lastModificationDate": 1658472838085,
+      "contentHash": "1aa384007aa26f14904359f7bf8f9b0d",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "UpgradeabilityProxy"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/node_modules/@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1658472837980,
+      "contentHash": "ac4b5731261638436f353a536bc6455d",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "BaseUpgradeabilityProxy"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/node_modules/@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol": {
+      "lastModificationDate": 1658472837993,
+      "contentHash": "9425865caf236f283ee7683039ba9623",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/node_modules/@openzeppelin/upgrades/contracts/utils/Address.sol": {
+      "lastModificationDate": 1658472837973,
+      "contentHash": "7ea532d4e55bc12e6fcbcefc0c29b56e",
+      "sourceName": "@openzeppelin/upgrades/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "OpenZeppelinUpgradesAddress"
+      ]
+    },
+    "/Users/muhammedrasheed/mycontract/node_modules/@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol": {
+      "lastModificationDate": 1658472838083,
+      "contentHash": "3965aa7e09f988a8b415e0725c2c7c42",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./InitializableAdminUpgradeabilityProxy.sol",
+        "../cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.3"
+      ],
+      "artifacts": [
+        "ProxyFactory"
+      ]
+    }
+  }
+}

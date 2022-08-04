@@ -1,0 +1,2511 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "OpenZeppelinUpgradesECDSA": {
+        "src": "@openzeppelin/upgrades/contracts/cryptography/ECDSA.sol:15",
+        "version": {
+          "withMetadata": "2b31ab9bbe5b66a321af4575c24290e1d69e01a631c2074baef830c3e3dda5a7",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:13",
+        "version": {
+          "withMetadata": "2ced165948aa00f0c6e5d22099b72864a7aae49ac8257cad2daa2ebf9c9347fc",
+          "withoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d",
+          "linkedWithoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:87"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol:12",
+        "version": {
+          "withMetadata": "f0a1a66e3e51dc057366a0b829554d0397b9ba1f27ed7f3d267e14747b6b53ee",
+          "withoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9",
+          "linkedWithoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9"
+        },
+        "inherit": [
+          "Proxy"
+        ],
+        "libraries": [
+          "OpenZeppelinUpgradesAddress"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableAdminUpgradeabilityProxy.sol:11",
+        "version": {
+          "withMetadata": "7049cc413f4862c71b620bf1df43bf2b90765503c9cd49a8a8f58fd8d2dd752d",
+          "withoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4",
+          "linkedWithoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4"
+        },
+        "inherit": [
+          "InitializableUpgradeabilityProxy",
+          "BaseAdminUpgradeabilityProxy",
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "7778f575ce0e17fb2f2f08a8deaa17e8eccb0db59378d24c24fe42f63b1a1bad",
+          "withoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf",
+          "linkedWithoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Proxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ProxyFactory": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:6",
+        "version": {
+          "withMetadata": "b616fff2368107589017df5341c1f291e364572a0d4742fd78fa7f87308f93ea",
+          "withoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee",
+          "linkedWithoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee"
+        },
+        "inherit": [],
+        "libraries": [
+          "OpenZeppelinUpgradesECDSA"
+        ],
+        "methods": [
+          "()",
+          "deployMinimal(address,bytes)",
+          "deploy(uint256,address,address,bytes)",
+          "deploySigned(uint256,address,address,bytes,bytes)",
+          "getDeploymentAddress(uint256,address)",
+          "getSigner(uint256,address,address,bytes,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProxyFactory",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProxyFactory",
+              "label": "contractCodeHash",
+              "type": "t_bytes32",
+              "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_bytes32": {
+              "label": "bytes32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "UpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "withoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "linkedWithoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeabilityProxy",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:19"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:23"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "OpenZeppelinUpgradesAddress": {
+        "src": "@openzeppelin/upgrades/contracts/utils/Address.sol:11",
+        "version": {
+          "withMetadata": "c389f6bfedd4a9d5266219bdaa9653a73bc2b534238fb5d9b2212f9a94102ad5",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "StoreFactory": {
+        "src": "contracts/StoreFactory.sol:7",
+        "version": {
+          "withMetadata": "3e7f51cdddc9b772325598e2161d846906244c7e889ec2fff2b487ad3e0e7abd",
+          "withoutMetadata": "5cacdd26c82c1066e92fded6b6c5fc35d4397a2b9fcb7e2154d1aabb705fa335",
+          "linkedWithoutMetadata": "5cacdd26c82c1066e92fded6b6c5fc35d4397a2b9fcb7e2154d1aabb705fa335"
+        },
+        "inherit": [
+          "ProxyFactory"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "cloneStore()",
+          "getAddress(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "StoreFactory",
+            "src": "contracts/StoreFactory.sol:17"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "StoreFactory",
+              "label": "impl",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:8"
+            },
+            {
+              "contract": "StoreFactory",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:9"
+            },
+            {
+              "contract": "StoreFactory",
+              "label": "clones",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/StoreFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Box": {
+        "src": "contracts/box.sol:7",
+        "version": {
+          "withMetadata": "137bfff82a38aae5363ede080d72365b39d72a4e1259f6d6896a7bc942cf4671",
+          "withoutMetadata": "d1b42fc246a27992e18ab5d776b20d48c00fd20da780725c09c1ae02627b5144",
+          "linkedWithoutMetadata": "d1b42fc246a27992e18ab5d776b20d48c00fd20da780725c09c1ae02627b5144"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Box",
+              "label": "value",
+              "type": "t_uint256",
+              "src": "contracts/box.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "OpenZeppelinUpgradesECDSA": {
+        "src": "@openzeppelin/upgrades/contracts/cryptography/ECDSA.sol:15",
+        "version": {
+          "withMetadata": "2b31ab9bbe5b66a321af4575c24290e1d69e01a631c2074baef830c3e3dda5a7",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:13",
+        "version": {
+          "withMetadata": "2ced165948aa00f0c6e5d22099b72864a7aae49ac8257cad2daa2ebf9c9347fc",
+          "withoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d",
+          "linkedWithoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:87"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol:12",
+        "version": {
+          "withMetadata": "f0a1a66e3e51dc057366a0b829554d0397b9ba1f27ed7f3d267e14747b6b53ee",
+          "withoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9",
+          "linkedWithoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9"
+        },
+        "inherit": [
+          "Proxy"
+        ],
+        "libraries": [
+          "OpenZeppelinUpgradesAddress"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableAdminUpgradeabilityProxy.sol:11",
+        "version": {
+          "withMetadata": "7049cc413f4862c71b620bf1df43bf2b90765503c9cd49a8a8f58fd8d2dd752d",
+          "withoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4",
+          "linkedWithoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4"
+        },
+        "inherit": [
+          "InitializableUpgradeabilityProxy",
+          "BaseAdminUpgradeabilityProxy",
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "7778f575ce0e17fb2f2f08a8deaa17e8eccb0db59378d24c24fe42f63b1a1bad",
+          "withoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf",
+          "linkedWithoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Proxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ProxyFactory": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:6",
+        "version": {
+          "withMetadata": "b616fff2368107589017df5341c1f291e364572a0d4742fd78fa7f87308f93ea",
+          "withoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee",
+          "linkedWithoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee"
+        },
+        "inherit": [],
+        "libraries": [
+          "OpenZeppelinUpgradesECDSA"
+        ],
+        "methods": [
+          "()",
+          "deployMinimal(address,bytes)",
+          "deploy(uint256,address,address,bytes)",
+          "deploySigned(uint256,address,address,bytes,bytes)",
+          "getDeploymentAddress(uint256,address)",
+          "getSigner(uint256,address,address,bytes,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProxyFactory",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProxyFactory",
+              "label": "contractCodeHash",
+              "type": "t_bytes32",
+              "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_bytes32": {
+              "label": "bytes32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "UpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "withoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "linkedWithoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeabilityProxy",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:19"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:23"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "OpenZeppelinUpgradesAddress": {
+        "src": "@openzeppelin/upgrades/contracts/utils/Address.sol:11",
+        "version": {
+          "withMetadata": "c389f6bfedd4a9d5266219bdaa9653a73bc2b534238fb5d9b2212f9a94102ad5",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "StoreFactory": {
+        "src": "contracts/StoreFactory.sol:7",
+        "version": {
+          "withMetadata": "057957187fa28b0b07e2e43317d60332f4b05dee24ad5c958d2d03116ba4ae82",
+          "withoutMetadata": "ca20b3031845c4c950f455a4b80399c1e95b2d839c7d34611cd57bae13ebeb70",
+          "linkedWithoutMetadata": "ca20b3031845c4c950f455a4b80399c1e95b2d839c7d34611cd57bae13ebeb70"
+        },
+        "inherit": [
+          "ProxyFactory"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "cloneStore()",
+          "getAddress(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "StoreFactory",
+            "src": "contracts/StoreFactory.sol:17"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "StoreFactory",
+              "label": "impl",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:8"
+            },
+            {
+              "contract": "StoreFactory",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:9"
+            },
+            {
+              "contract": "StoreFactory",
+              "label": "clones",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/StoreFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Box": {
+        "src": "contracts/box.sol:7",
+        "version": {
+          "withMetadata": "137bfff82a38aae5363ede080d72365b39d72a4e1259f6d6896a7bc942cf4671",
+          "withoutMetadata": "d1b42fc246a27992e18ab5d776b20d48c00fd20da780725c09c1ae02627b5144",
+          "linkedWithoutMetadata": "d1b42fc246a27992e18ab5d776b20d48c00fd20da780725c09c1ae02627b5144"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Box",
+              "label": "value",
+              "type": "t_uint256",
+              "src": "contracts/box.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "OpenZeppelinUpgradesECDSA": {
+        "src": "@openzeppelin/upgrades/contracts/cryptography/ECDSA.sol:15",
+        "version": {
+          "withMetadata": "2b31ab9bbe5b66a321af4575c24290e1d69e01a631c2074baef830c3e3dda5a7",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:13",
+        "version": {
+          "withMetadata": "2ced165948aa00f0c6e5d22099b72864a7aae49ac8257cad2daa2ebf9c9347fc",
+          "withoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d",
+          "linkedWithoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:87"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol:12",
+        "version": {
+          "withMetadata": "f0a1a66e3e51dc057366a0b829554d0397b9ba1f27ed7f3d267e14747b6b53ee",
+          "withoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9",
+          "linkedWithoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9"
+        },
+        "inherit": [
+          "Proxy"
+        ],
+        "libraries": [
+          "OpenZeppelinUpgradesAddress"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableAdminUpgradeabilityProxy.sol:11",
+        "version": {
+          "withMetadata": "7049cc413f4862c71b620bf1df43bf2b90765503c9cd49a8a8f58fd8d2dd752d",
+          "withoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4",
+          "linkedWithoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4"
+        },
+        "inherit": [
+          "InitializableUpgradeabilityProxy",
+          "BaseAdminUpgradeabilityProxy",
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "7778f575ce0e17fb2f2f08a8deaa17e8eccb0db59378d24c24fe42f63b1a1bad",
+          "withoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf",
+          "linkedWithoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Proxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ProxyFactory": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:6",
+        "version": {
+          "withMetadata": "b616fff2368107589017df5341c1f291e364572a0d4742fd78fa7f87308f93ea",
+          "withoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee",
+          "linkedWithoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee"
+        },
+        "inherit": [],
+        "libraries": [
+          "OpenZeppelinUpgradesECDSA"
+        ],
+        "methods": [
+          "()",
+          "deployMinimal(address,bytes)",
+          "deploy(uint256,address,address,bytes)",
+          "deploySigned(uint256,address,address,bytes,bytes)",
+          "getDeploymentAddress(uint256,address)",
+          "getSigner(uint256,address,address,bytes,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProxyFactory",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProxyFactory",
+              "label": "contractCodeHash",
+              "type": "t_bytes32",
+              "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_bytes32": {
+              "label": "bytes32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "UpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "withoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "linkedWithoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeabilityProxy",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:19"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:23"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "OpenZeppelinUpgradesAddress": {
+        "src": "@openzeppelin/upgrades/contracts/utils/Address.sol:11",
+        "version": {
+          "withMetadata": "c389f6bfedd4a9d5266219bdaa9653a73bc2b534238fb5d9b2212f9a94102ad5",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "StoreFactory": {
+        "src": "contracts/StoreFactory.sol:6",
+        "version": {
+          "withMetadata": "87efe53f784a27eba6fcadc797e493bcaf0c9e5b32fb2ec70b54dfcf9cc55a04",
+          "withoutMetadata": "31050c63ff45d0cdf7283874aee91cb2b067496d9fcec5a62fd027a2bd217bd1",
+          "linkedWithoutMetadata": "31050c63ff45d0cdf7283874aee91cb2b067496d9fcec5a62fd027a2bd217bd1"
+        },
+        "inherit": [
+          "ProxyFactory"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "cloneStore()",
+          "getAddress(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "StoreFactory",
+            "src": "contracts/StoreFactory.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "StoreFactory",
+              "label": "impl",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:7"
+            },
+            {
+              "contract": "StoreFactory",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:8"
+            },
+            {
+              "contract": "StoreFactory",
+              "label": "clones",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/StoreFactory.sol:9"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "OpenZeppelinUpgradesECDSA": {
+        "src": "@openzeppelin/upgrades/contracts/cryptography/ECDSA.sol:15",
+        "version": {
+          "withMetadata": "2b31ab9bbe5b66a321af4575c24290e1d69e01a631c2074baef830c3e3dda5a7",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:13",
+        "version": {
+          "withMetadata": "2ced165948aa00f0c6e5d22099b72864a7aae49ac8257cad2daa2ebf9c9347fc",
+          "withoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d",
+          "linkedWithoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:87"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol:12",
+        "version": {
+          "withMetadata": "f0a1a66e3e51dc057366a0b829554d0397b9ba1f27ed7f3d267e14747b6b53ee",
+          "withoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9",
+          "linkedWithoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9"
+        },
+        "inherit": [
+          "Proxy"
+        ],
+        "libraries": [
+          "OpenZeppelinUpgradesAddress"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableAdminUpgradeabilityProxy.sol:11",
+        "version": {
+          "withMetadata": "7049cc413f4862c71b620bf1df43bf2b90765503c9cd49a8a8f58fd8d2dd752d",
+          "withoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4",
+          "linkedWithoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4"
+        },
+        "inherit": [
+          "InitializableUpgradeabilityProxy",
+          "BaseAdminUpgradeabilityProxy",
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "7778f575ce0e17fb2f2f08a8deaa17e8eccb0db59378d24c24fe42f63b1a1bad",
+          "withoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf",
+          "linkedWithoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Proxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ProxyFactory": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:6",
+        "version": {
+          "withMetadata": "b616fff2368107589017df5341c1f291e364572a0d4742fd78fa7f87308f93ea",
+          "withoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee",
+          "linkedWithoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee"
+        },
+        "inherit": [],
+        "libraries": [
+          "OpenZeppelinUpgradesECDSA"
+        ],
+        "methods": [
+          "()",
+          "deployMinimal(address,bytes)",
+          "deploy(uint256,address,address,bytes)",
+          "deploySigned(uint256,address,address,bytes,bytes)",
+          "getDeploymentAddress(uint256,address)",
+          "getSigner(uint256,address,address,bytes,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProxyFactory",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProxyFactory",
+              "label": "contractCodeHash",
+              "type": "t_bytes32",
+              "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_bytes32": {
+              "label": "bytes32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "UpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "withoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "linkedWithoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeabilityProxy",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:19"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:23"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "OpenZeppelinUpgradesAddress": {
+        "src": "@openzeppelin/upgrades/contracts/utils/Address.sol:11",
+        "version": {
+          "withMetadata": "c389f6bfedd4a9d5266219bdaa9653a73bc2b534238fb5d9b2212f9a94102ad5",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "StoreFactory": {
+        "src": "contracts/StoreFactory.sol:6",
+        "version": {
+          "withMetadata": "f2dc78c83bc28caff56c37eec486dc09dd8fbc730228b562f4898179ae9d1cc4",
+          "withoutMetadata": "d30dc63fa245fb1788a6ce34c4a0b0d8b8fa163fa9f6a594f34fc0285e44e605",
+          "linkedWithoutMetadata": "d30dc63fa245fb1788a6ce34c4a0b0d8b8fa163fa9f6a594f34fc0285e44e605"
+        },
+        "inherit": [
+          "ProxyFactory"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "cloneStore()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "StoreFactory",
+            "src": "contracts/StoreFactory.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "StoreFactory",
+              "label": "impl",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:7"
+            },
+            {
+              "contract": "StoreFactory",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:8"
+            },
+            {
+              "contract": "StoreFactory",
+              "label": "clone",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:9"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "OpenZeppelinUpgradesECDSA": {
+        "src": "@openzeppelin/upgrades/contracts/cryptography/ECDSA.sol:15",
+        "version": {
+          "withMetadata": "2b31ab9bbe5b66a321af4575c24290e1d69e01a631c2074baef830c3e3dda5a7",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:13",
+        "version": {
+          "withMetadata": "2ced165948aa00f0c6e5d22099b72864a7aae49ac8257cad2daa2ebf9c9347fc",
+          "withoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d",
+          "linkedWithoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:87"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol:12",
+        "version": {
+          "withMetadata": "f0a1a66e3e51dc057366a0b829554d0397b9ba1f27ed7f3d267e14747b6b53ee",
+          "withoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9",
+          "linkedWithoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9"
+        },
+        "inherit": [
+          "Proxy"
+        ],
+        "libraries": [
+          "OpenZeppelinUpgradesAddress"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableAdminUpgradeabilityProxy.sol:11",
+        "version": {
+          "withMetadata": "7049cc413f4862c71b620bf1df43bf2b90765503c9cd49a8a8f58fd8d2dd752d",
+          "withoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4",
+          "linkedWithoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4"
+        },
+        "inherit": [
+          "InitializableUpgradeabilityProxy",
+          "BaseAdminUpgradeabilityProxy",
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "7778f575ce0e17fb2f2f08a8deaa17e8eccb0db59378d24c24fe42f63b1a1bad",
+          "withoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf",
+          "linkedWithoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Proxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ProxyFactory": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:6",
+        "version": {
+          "withMetadata": "b616fff2368107589017df5341c1f291e364572a0d4742fd78fa7f87308f93ea",
+          "withoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee",
+          "linkedWithoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee"
+        },
+        "inherit": [],
+        "libraries": [
+          "OpenZeppelinUpgradesECDSA"
+        ],
+        "methods": [
+          "()",
+          "deployMinimal(address,bytes)",
+          "deploy(uint256,address,address,bytes)",
+          "deploySigned(uint256,address,address,bytes,bytes)",
+          "getDeploymentAddress(uint256,address)",
+          "getSigner(uint256,address,address,bytes,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProxyFactory",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProxyFactory",
+              "label": "contractCodeHash",
+              "type": "t_bytes32",
+              "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_bytes32": {
+              "label": "bytes32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "UpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "withoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "linkedWithoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeabilityProxy",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:19"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:23"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "OpenZeppelinUpgradesAddress": {
+        "src": "@openzeppelin/upgrades/contracts/utils/Address.sol:11",
+        "version": {
+          "withMetadata": "c389f6bfedd4a9d5266219bdaa9653a73bc2b534238fb5d9b2212f9a94102ad5",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "StoreFactory": {
+        "src": "contracts/StoreFactory.sol:6",
+        "version": {
+          "withMetadata": "b179e1844b4a9ee98d26b9b0ec343ce5b9394acbe29b60b56cbd8681d2e963d8",
+          "withoutMetadata": "83732bc84ead60eb2b224433dc8ee4a17e933283c30abcc76282991f17715817",
+          "linkedWithoutMetadata": "83732bc84ead60eb2b224433dc8ee4a17e933283c30abcc76282991f17715817"
+        },
+        "inherit": [
+          "ProxyFactory"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "cloneStore()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "StoreFactory",
+            "src": "contracts/StoreFactory.sol:15"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "StoreFactory",
+              "label": "impl",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:7"
+            },
+            {
+              "contract": "StoreFactory",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:8"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "OpenZeppelinUpgradesECDSA": {
+        "src": "@openzeppelin/upgrades/contracts/cryptography/ECDSA.sol:15",
+        "version": {
+          "withMetadata": "2b31ab9bbe5b66a321af4575c24290e1d69e01a631c2074baef830c3e3dda5a7",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:13",
+        "version": {
+          "withMetadata": "2ced165948aa00f0c6e5d22099b72864a7aae49ac8257cad2daa2ebf9c9347fc",
+          "withoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d",
+          "linkedWithoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:87"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol:12",
+        "version": {
+          "withMetadata": "f0a1a66e3e51dc057366a0b829554d0397b9ba1f27ed7f3d267e14747b6b53ee",
+          "withoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9",
+          "linkedWithoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9"
+        },
+        "inherit": [
+          "Proxy"
+        ],
+        "libraries": [
+          "OpenZeppelinUpgradesAddress"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableAdminUpgradeabilityProxy.sol:11",
+        "version": {
+          "withMetadata": "7049cc413f4862c71b620bf1df43bf2b90765503c9cd49a8a8f58fd8d2dd752d",
+          "withoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4",
+          "linkedWithoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4"
+        },
+        "inherit": [
+          "InitializableUpgradeabilityProxy",
+          "BaseAdminUpgradeabilityProxy",
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "7778f575ce0e17fb2f2f08a8deaa17e8eccb0db59378d24c24fe42f63b1a1bad",
+          "withoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf",
+          "linkedWithoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Proxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ProxyFactory": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:6",
+        "version": {
+          "withMetadata": "b616fff2368107589017df5341c1f291e364572a0d4742fd78fa7f87308f93ea",
+          "withoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee",
+          "linkedWithoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee"
+        },
+        "inherit": [],
+        "libraries": [
+          "OpenZeppelinUpgradesECDSA"
+        ],
+        "methods": [
+          "()",
+          "deployMinimal(address,bytes)",
+          "deploy(uint256,address,address,bytes)",
+          "deploySigned(uint256,address,address,bytes,bytes)",
+          "getDeploymentAddress(uint256,address)",
+          "getSigner(uint256,address,address,bytes,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProxyFactory",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProxyFactory",
+              "label": "contractCodeHash",
+              "type": "t_bytes32",
+              "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_bytes32": {
+              "label": "bytes32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "UpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "withoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "linkedWithoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeabilityProxy",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:19"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:23"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "OpenZeppelinUpgradesAddress": {
+        "src": "@openzeppelin/upgrades/contracts/utils/Address.sol:11",
+        "version": {
+          "withMetadata": "c389f6bfedd4a9d5266219bdaa9653a73bc2b534238fb5d9b2212f9a94102ad5",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "StoreFactory": {
+        "src": "contracts/StoreFactory.sol:6",
+        "version": {
+          "withMetadata": "096c44a4cc9e3b52ab80c9de4b8f550f2fe220e62ef3054c90dbb578ee7ac2ca",
+          "withoutMetadata": "4eb4ecf12be41f33305fcb1db19630d13681becc457df0885b138829b6075164",
+          "linkedWithoutMetadata": "4eb4ecf12be41f33305fcb1db19630d13681becc457df0885b138829b6075164"
+        },
+        "inherit": [
+          "ProxyFactory"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "cloneStore()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "StoreFactory",
+            "src": "contracts/StoreFactory.sol:15"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "StoreFactory",
+              "label": "impl",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:7"
+            },
+            {
+              "contract": "StoreFactory",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/StoreFactory.sol:8"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "OpenZeppelinUpgradesECDSA": {
+        "src": "@openzeppelin/upgrades/contracts/cryptography/ECDSA.sol:15",
+        "version": {
+          "withMetadata": "2b31ab9bbe5b66a321af4575c24290e1d69e01a631c2074baef830c3e3dda5a7",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:13",
+        "version": {
+          "withMetadata": "2ced165948aa00f0c6e5d22099b72864a7aae49ac8257cad2daa2ebf9c9347fc",
+          "withoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d",
+          "linkedWithoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:87"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol:12",
+        "version": {
+          "withMetadata": "f0a1a66e3e51dc057366a0b829554d0397b9ba1f27ed7f3d267e14747b6b53ee",
+          "withoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9",
+          "linkedWithoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9"
+        },
+        "inherit": [
+          "Proxy"
+        ],
+        "libraries": [
+          "OpenZeppelinUpgradesAddress"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableAdminUpgradeabilityProxy.sol:11",
+        "version": {
+          "withMetadata": "7049cc413f4862c71b620bf1df43bf2b90765503c9cd49a8a8f58fd8d2dd752d",
+          "withoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4",
+          "linkedWithoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4"
+        },
+        "inherit": [
+          "InitializableUpgradeabilityProxy",
+          "BaseAdminUpgradeabilityProxy",
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "7778f575ce0e17fb2f2f08a8deaa17e8eccb0db59378d24c24fe42f63b1a1bad",
+          "withoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf",
+          "linkedWithoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Proxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ProxyFactory": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:6",
+        "version": {
+          "withMetadata": "b616fff2368107589017df5341c1f291e364572a0d4742fd78fa7f87308f93ea",
+          "withoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee",
+          "linkedWithoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee"
+        },
+        "inherit": [],
+        "libraries": [
+          "OpenZeppelinUpgradesECDSA"
+        ],
+        "methods": [
+          "()",
+          "deployMinimal(address,bytes)",
+          "deploy(uint256,address,address,bytes)",
+          "deploySigned(uint256,address,address,bytes,bytes)",
+          "getDeploymentAddress(uint256,address)",
+          "getSigner(uint256,address,address,bytes,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProxyFactory",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProxyFactory",
+              "label": "contractCodeHash",
+              "type": "t_bytes32",
+              "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_bytes32": {
+              "label": "bytes32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "UpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "withoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "linkedWithoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeabilityProxy",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:19"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:23"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "OpenZeppelinUpgradesAddress": {
+        "src": "@openzeppelin/upgrades/contracts/utils/Address.sol:11",
+        "version": {
+          "withMetadata": "c389f6bfedd4a9d5266219bdaa9653a73bc2b534238fb5d9b2212f9a94102ad5",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "OpenZeppelinUpgradesECDSA": {
+        "src": "@openzeppelin/upgrades/contracts/cryptography/ECDSA.sol:15",
+        "version": {
+          "withMetadata": "2b31ab9bbe5b66a321af4575c24290e1d69e01a631c2074baef830c3e3dda5a7",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:13",
+        "version": {
+          "withMetadata": "2ced165948aa00f0c6e5d22099b72864a7aae49ac8257cad2daa2ebf9c9347fc",
+          "withoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d",
+          "linkedWithoutMetadata": "2b1d2dd60246b90993c2d889140733872d5973bfd515a682ebc9f75b3140ff0d"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol:87"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BaseUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol:12",
+        "version": {
+          "withMetadata": "f0a1a66e3e51dc057366a0b829554d0397b9ba1f27ed7f3d267e14747b6b53ee",
+          "withoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9",
+          "linkedWithoutMetadata": "8c998f38e18f37044e63de31853dda08ab5d31483019e7f9d34298b2832785d9"
+        },
+        "inherit": [
+          "Proxy"
+        ],
+        "libraries": [
+          "OpenZeppelinUpgradesAddress"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableAdminUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableAdminUpgradeabilityProxy.sol:11",
+        "version": {
+          "withMetadata": "7049cc413f4862c71b620bf1df43bf2b90765503c9cd49a8a8f58fd8d2dd752d",
+          "withoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4",
+          "linkedWithoutMetadata": "2e2f3e4d237a27b0362e2441e64efee053adc2cf599ba68953d065a2bb42cea4"
+        },
+        "inherit": [
+          "InitializableUpgradeabilityProxy",
+          "BaseAdminUpgradeabilityProxy",
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "InitializableUpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "7778f575ce0e17fb2f2f08a8deaa17e8eccb0db59378d24c24fe42f63b1a1bad",
+          "withoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf",
+          "linkedWithoutMetadata": "282ec5b4a00e8044f28817f3066f1e4dbc12ea164d9e6801d38b0ddf40a7b2cf"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/InitializableUpgradeabilityProxy.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Proxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ProxyFactory": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:6",
+        "version": {
+          "withMetadata": "b616fff2368107589017df5341c1f291e364572a0d4742fd78fa7f87308f93ea",
+          "withoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee",
+          "linkedWithoutMetadata": "d0f9df13debe707cddf0e0d5e8f4aa6b18b82ff9b2bd588e4b868f76e6d12dee"
+        },
+        "inherit": [],
+        "libraries": [
+          "OpenZeppelinUpgradesECDSA"
+        ],
+        "methods": [
+          "()",
+          "deployMinimal(address,bytes)",
+          "deploy(uint256,address,address,bytes)",
+          "deploySigned(uint256,address,address,bytes,bytes)",
+          "getDeploymentAddress(uint256,address)",
+          "getSigner(uint256,address,address,bytes,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProxyFactory",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProxyFactory",
+              "label": "contractCodeHash",
+              "type": "t_bytes32",
+              "src": "@openzeppelin/upgrades/contracts/upgradeability/ProxyFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_bytes32": {
+              "label": "bytes32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "UpgradeabilityProxy": {
+        "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:10",
+        "version": {
+          "withMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "withoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732",
+          "linkedWithoutMetadata": "bd413bd44bbf964caaa69bf0f0d674b907405d500b81d83ed94010e5c7d28732"
+        },
+        "inherit": [
+          "BaseUpgradeabilityProxy",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeabilityProxy",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:19"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol:23"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "OpenZeppelinUpgradesAddress": {
+        "src": "@openzeppelin/upgrades/contracts/utils/Address.sol:11",
+        "version": {
+          "withMetadata": "c389f6bfedd4a9d5266219bdaa9653a73bc2b534238fb5d9b2212f9a94102ad5",
+          "withoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf",
+          "linkedWithoutMetadata": "c71580041790db89d786eec5b400849fb1b368efb59c3ffe71bb1d05d8705edf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "BoxV2": {
+        "src": "contracts/boxV2.sol:4",
+        "version": {
+          "withMetadata": "ed737571e5d2ce7bdf9570504406c78ee24052f977a448e012bc4bc92c4d1f27",
+          "withoutMetadata": "3805174424e378b3d8a46d6d51480086b8328443a370236d0641873b746b659d",
+          "linkedWithoutMetadata": "3805174424e378b3d8a46d6d51480086b8328443a370236d0641873b746b659d"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()",
+          "increment()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/boxV2.sol:5"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "BoxV2": {
+        "src": "contracts/boxV2.sol:4",
+        "version": {
+          "withMetadata": "61b6d9ae6f045a357c81b403101144d1f4c8e6dcddb816d73e142bfb413b37fe",
+          "withoutMetadata": "9210b1d9dcc373b9542056d552c77584c34629463562cf0565522cec808210f0",
+          "linkedWithoutMetadata": "9210b1d9dcc373b9542056d552c77584c34629463562cf0565522cec808210f0"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()",
+          "increment()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/boxV2.sol:5"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Box": {
+        "src": "contracts/box.sol:7",
+        "version": {
+          "withMetadata": "c191993c52ca4d0838e32246dc2042862412193066c7414405cd37fddf14385e",
+          "withoutMetadata": "a65cdfa308566facef6065beb9e631bc7782c0699e2093fd7f5bc24c50583bce",
+          "linkedWithoutMetadata": "a65cdfa308566facef6065beb9e631bc7782c0699e2093fd7f5bc24c50583bce"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/box.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Box": {
+        "src": "contracts/box.sol:5",
+        "version": {
+          "withMetadata": "950760586eba9d363fc444a88a65143c9678ef2eb1760c11fb5612d252877bfe",
+          "withoutMetadata": "a65cdfa308566facef6065beb9e631bc7782c0699e2093fd7f5bc24c50583bce",
+          "linkedWithoutMetadata": "a65cdfa308566facef6065beb9e631bc7782c0699e2093fd7f5bc24c50583bce"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/box.sol:6"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    }
+  ]
+}
